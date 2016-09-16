@@ -19,5 +19,5 @@ run " cp /mnt/c/Users/teenf/Downloads/azureuser.pem ~/.ssh/azureuser.pem"
 # Connect to ubuntu server
 run "ssh -i ~/.ssh/azureuser.pem azureuser@4.194.xx.xxx"
 
-done
+
 

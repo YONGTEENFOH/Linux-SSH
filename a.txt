@@ -1,0 +1,23 @@
+How to SSH into Azure ubuntu server using Windows Subsystems for Linux via Powershell terminal
+
+Pre-requisite:
+# Enable virtualization on your uefi settings, this step is needed for wsl to be installed properly
+Start  > Settings > System  > Recovery > Advanced startup, then select Restart now.
+Troubleshoot > Advanced options > UEFI Settings > Restart.
+
+# This will install windows subsystem for linux, otherwise your chmod command won't work later during configuration for linux server
+open powershell and run "wsl --install"
+create username and password
+restart machine
+
+# Create a folder in wsl environment, this is the default location to store pem file
+mkdir .ssh
+
+# To move pem file from windows file system to wsl file system
+run " cp /mnt/c/Users/teenf/Downloads/azureuser.pem ~/.ssh/azureuser.pem"
+
+# Connect to ubuntu server
+run "ssh -i ~/.ssh/azureuser.pem azureuser@4.194.xx.xxx"
+
+edit 1
+

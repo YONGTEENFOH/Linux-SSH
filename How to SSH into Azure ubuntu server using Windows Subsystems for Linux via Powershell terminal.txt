@@ -1,5 +1,3 @@
-How to SSH into Azure ubuntu server using Windows Subsystems for Linux via Powershell terminal
-
 Pre-requisite:
 # Enable virtualization on your uefi settings, this step is needed for wsl to be installed properly
 Start  > Settings > System  > Recovery > Advanced startup, then select Restart now.
